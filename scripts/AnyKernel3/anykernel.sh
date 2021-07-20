@@ -3,8 +3,17 @@
 
 ## AnyKernel setup
 # begin properties
+echo '88                                88                           88'
+echo "88                                88                           88"
+echo "88                                88                           88"
+echo "88,dPPYba,  ,adPPYYba,  ,adPPYba, 88   ,d8  ,adPPYba,  ,adPPYb,88"
+echo '88P     "8a ""     `Y8 a8"     "" 88 ,a8"  a8P_____88 a8"    `Y88'
+echo '88       88 ,adPPPPP88 8b         8888[    8PP""""""" 8b       88'
+echo '88       88 88,    ,88 "8a,   ,aa 88`"Yba, "8b,   ,aa "8a,   ,d88'
+echo '88       88 `"8bbdP"Y8  `"Ybbd8"  88   `Y8a `"Ybbd8""  `"8bbdP Y8'
+
 properties() { '
-kernel.string=NeptuneKernel by Vwool0xE9
+kernel.string=HackThat by petya230
 do.devicecheck=1
 do.modules=0
 do.systemless=1

@@ -1,20 +1,21 @@
 #!/bin/bash
 
 # Kernel version configuration
-KNAME="NeptuneKernel"
-MIN_HEAD=$(git rev-parse HEAD)
+KNAME="HackThat_OC"
+#MIN_HEAD=$(git rev-parse HEAD)
 VERSION="$(cat version)-$(date +%m.%d.%y)-$(echo ${MIN_HEAD:0:8})"
-ZIPNAME="${KNAME}-$(cat version)-$(echo ${MIN_HEAD:0:8})"
+ZIPNAME="${KNAME}-$(cat version)-$(date +%m.%d.%y.%k.%M)"
 
 export LOCALVERSION="-${KNAME}-$(echo "${VERSION}")"
 
 # Never dirty compile
-if [[ "${1}" != "skip" ]] ; then
-	./clean.sh
-fi
+#if [[ "${1}" != "skip" ]] ; then
+#	./clean.sh
+#fi
 
 # Let's build
 START=$(date +"%s")
+make clean
 ./build.sh || exit 1
 
 # Kernel Output

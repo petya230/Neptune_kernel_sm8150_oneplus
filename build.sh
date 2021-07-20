@@ -1,15 +1,15 @@
 #!/bin/bash
 
 # HOME path
-export HOME=/home/atndko
+export HOME=/home/petya230/kernel
 
 # Compiler environment
-export CLANG_PATH=$HOME/clang/bin
+export CLANG_PATH=$HOME/proton-clang/bin
 export PATH="$CLANG_PATH:$PATH"
 export CROSS_COMPILE=aarch64-linux-gnu-
 export CROSS_COMPILE_ARM32=arm-linux-gnueabi-
-export KBUILD_BUILD_USER=Vwool0xE9
-export KBUILD_BUILD_HOST=Atndko
+export KBUILD_BUILD_USER=petya230
+export KBUILD_BUILD_HOST=Asus_Tuf
 
 echo
 echo "Setting defconfig"
